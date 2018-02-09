@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#a7ec5d"
+    tools:context="com.iesvirgendelcarmen.dam.videos03.Videos03">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REPRODUCIENDO VIDEO VIDEO"
+        android:gravity="center"
+        android:textColor="#f70606"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/fichero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FICHERO DESTINO: MIVIDEO.MP4"
+        android:gravity="center"
+        android:textColor="#fa0808"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#000000" />
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="640px"
+        android:layout_height="520px"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/grabar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GRABAR" />
+
+        <Button
+            android:id="@+id/parar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PARAR"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PLAY"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#000000" />
+
+</LinearLayout>
